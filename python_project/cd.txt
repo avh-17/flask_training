@@ -1,0 +1,168 @@
+cursor.execute("""INSERT INTO symdb (
+    profileID,
+    username,
+    password, 
+    firstname,
+    lastname ,
+    email,
+    createdAt,
+    updatedAt,
+    humanApis,
+    status,
+    phonenumber,
+    phonevalidation,
+    emailvalidation,
+    role,
+    source)
+    VALUES (
+    'jd17',
+    'jon',
+    'valjon123',
+    'jon',
+    'bon jovi',
+    '
+    )
+    """)
+
+    cursor.execute("""SELECT * FROM smpdb WHERE username LIKE 'ram%';""")
+
+    in_row_3 = ("""INSERT INTO smpdb (
+    profileID,
+    username,
+    password, 
+    firstname,
+    lastname ,
+    email,
+    createdAt,
+    updatedAt,
+    humanApis,
+    status,
+    phonenumber,
+    phonevalidation,
+    emailvalidation,
+    role,
+    source)
+    VALUES (
+    'bry19',
+    'bryan',
+    'valbry123',
+    'bryan',
+    'adams',
+    'brya15@gmail.com',
+    %s,
+    %s,
+    '[{"name":"bry","salary":80000,"married":true}]',
+    2,
+    '2357378092',
+    True,
+    True,
+    array['emp ', 'dev'],
+    352
+    ),
+    """)
+
+in_row_4 = ("""INSERT INTO smpdb (
+    profileID,
+    username,
+    password, 
+    firstname,
+    lastname ,
+    email,
+    createdAt,
+    updatedAt,
+    humanApis,
+    status,
+    phonenumber,
+    phonevalidation,
+    emailvalidation,
+    role,
+    source)
+    VALUES (
+    'ani18',
+    'anirudh',
+    'valani123',
+    'ani',
+    '',
+    'ani15@gmail.com',
+    %s,
+    %s,
+    '[{"name":"ani","salary":40000,"married":false}]',
+    1,
+    '6462173861',
+    True,
+    False,
+    array['asd', 'emp'],
+    529
+    )
+    """)
+
+in_row_5 = ("""INSERT INTO smpdb (
+    profileID,
+    username,
+    password, 
+    firstname,
+    lastname ,
+    email,
+    createdAt,
+    updatedAt,
+    humanApis,
+    status,
+    phonenumber,
+    phonevalidation,
+    emailvalidation,
+    role,
+    source)
+    VALUES (
+    'rdj17',
+    'ramsey',
+    'valrdj123',
+    'rams',
+    'dj',
+    'rdj15@gmail.com',
+    %s,
+    %s,
+    '[{"name":"jon","salary":56000,"married":true}]',
+    1,
+    '9876543218',
+    True,
+    False,
+    array['admin', 'user'],
+    463
+    ),
+    """)
+
+    # cursor.execute(smpdb) // creating table
+in_row_5 = ("""INSERT INTO smpdb (
+    profileID,
+    username,
+    password, 
+    firstname,
+    lastname ,
+    email,
+    createdAt,
+    updatedAt,
+    humanApis,
+    status,
+    phonenumber,
+    phonevalidation,
+    emailvalidation,
+    role,
+    source)
+    VALUES (
+    'rkl2',
+    'rahul',
+    'valrahul123',
+    'rahul',
+    'k l',
+    'rahulkl2@gmail.com',
+    %s,
+    %s,
+    '[{"name":"rahul","salary":1300000,"married":true}]',
+    3,
+    '23547382992',
+    False,
+    True,
+    array['manager', 'emp'],
+    212
+    )
+    """)
